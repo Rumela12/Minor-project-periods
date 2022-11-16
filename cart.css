@@ -1,128 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,300&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins' , sans-serif;
+body{
+    background-color: darksalmon;
 }
-.panel_body_style{
-    min-height: fit-content;
-    max-height: fit-content;
-}
-
-.content{
-    min-height: 660px;
+.invoice-table{
+    border-collapse: collapse;
+    width: 45em;
+    height: 15em;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, .15);
+    margin: 25px auto;
 }
 
-.signup-image{
-    height: 580px;
+.invoice-table thead tr{
+    border-bottom: 1px dashed grey;
 }
 
-.btn-signup{
-    display: flex;
-    justify-content: flex-end;
-}
-.red{
-    color: red;
+.invoice-table tfoot tr{
+    border-top: 1px dashed grey;
 }
 
-.green{
+.invoice-table thead tr td{
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: grey;
+    padding: 8px;
+}
+
+.invoice-table tfoot tr td{
+    font-size: 18px;
+    letter-spacing: 1px;
     color: green;
+    padding: 8px;
 }
 
-.size100{
-    font-size: 100px;
+.invoice-table tbody tr td{
+    padding: 8px;
 }
 
-.about-h3{
-    font-weight: 390;
-    font-style: oblique;
-    
+.invoice-table thead tr td:nth-last-child(1),
+.invoice-table tbody tr td:nth-last-child(1),
+.invoice-table tfoot tr td:nth-last-child(1)
+{
+    text-align: right;
 }
 
-.box-padding-rl{
-    padding: 0px 12px;
+.invoice-table .button{
+    background-color: white;
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+      
+.invoice-table .button:hover{
+    background-color: darksalmon;
+    color: white;
+}
+.invoice-table .add_items{
+    color: black;
+    text-align: center;
+    width: 100%;
+    font-size: 35px;
 }
 
-.box-padding-10{
-    padding: 10px 0px;
-}
-
-.box-padding-left{
-    padding-left: 20px;
-}
-
-.about-p{
-    padding: 20px 0px;
-}
-
-.p-bold{
-    font-weight: 900;
-}
-
-.p-blue{
-    color: blue;
-}
-
-.white{
-    color: #FFF;
-}
-
-.bg-white{
-    background-color: #FFF;
-}
-
-.about-img{
-    margin: 0px auto;
-}
-
-.live-support-img{
-    margin-top: 30px;
-}
-
-.img-phone{
-    height: 250px;
-    margin: 0px auto;
-    transition: 0.7s ease-out;
-}
-
-.img-phone:hover{
-    height: 320px;
-}
-
-.panel-default-setting{
-    border: 1px solid #101010;
-}
-
-.panel-default-setting  > .panel-heading
- {
-    color: #FFF;
-    background-color: #101010;
-}
-
-.btn-setting{
-    background-color: #000;
-    color: #FFF;
-    transition: 0.5s ease-in;
-}
-
-.btn-setting:hover{
-    background-color:#43053C;
-    color: #FFF;
-}
-
-
-
-/* @media */
-    @media(max-width:991px){
-        .signup-image{
-            display: none;
-        }
-        .live-support-img{
-            display: none;
-        }
-        .about-img{
-            margin: 0px auto;
-        }
-    }
-/* !@media */
+/* bottom navabar */
+.navbar {
+    background-color: rgb(229, 225, 225);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    /* float: center; */
+    /* height: 15px; */
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color: #fcbacb;
+    color: white;
+  }
+  
+  /* Add a color to the active/current link */
+  .navbar a.active {
+    background-color: #fc94af;
+    color: white;
+  }
