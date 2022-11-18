@@ -129,7 +129,7 @@ input[type="checkbox"]{
          <?php
                 if (isset($_SESSION['email_id'])) {
                     ?>
-            <li><a href="#">Period Tracker</a></li>
+            <li><a href="period_track.php">Period Tracker</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="pamper_booth.php">Pamper Booth</a></li>
             <li><a href="shop.php">Shop</a></li>
@@ -138,7 +138,7 @@ input[type="checkbox"]{
             <?php
                 } else {
                     ?>
-            <li><a href="#">Period Tracker</a></li>
+            <li><a href="period_track.php">Period Tracker</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="pamper_booth.php">Pamper Booth</a></li>
             <li><a href="shop.php">Shop</a></li>

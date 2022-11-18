@@ -11,20 +11,19 @@
     <link rel="stylesheet" href="faq.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 </head>
-<body>
-    <!--header-->
-    <!-- <?php
-        include './includes/navbar.php';
-    ?> -->
-    <!--header end-->
-    <!-- <nav>brand</nav> -->
-    <div class="box">
+<body> 
+    <div class="navbar">
+<?php
+        require './includes/navbar.php';
+    ?>
+    </div>
+<div class="box" style="width:80%;height:770px; top:50px;margin-left:125px;">
         <h1 class="title">
              HEY BEAUTIFUL ! Let's Get Some Fact
         </h1>
         <main class="accordion">
             <div class="faq-img">
-                <img src="images/i.jpeg" alt="" class="accordion-img">
+                <img src="images/i.jpeg"  alt="" class="accordion-img">
             </div>
             <div class="content-accordion">
                 <div class="question-answer">
@@ -135,7 +134,7 @@
                     <div class="answer">
                         <p>You should change your pad depending on your flow. It may seem like you bleed a lot during your period, but most girls normally lose between 4 and 12 teaspoons of blood during an average period. In the first 1-2 days of your period, you may bleed more heavily and need to change it often. If you are using pads with high absorbing capacity, then you can wear these for as long as 8 hours. Like when you are sleeping at night. </p>
                     </div>
-                    </div>
+                </div>
                     <div class="question-answer">
                         <div class="question">
                             <h3 class="title-question">

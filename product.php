@@ -56,6 +56,7 @@
                     <a class="dropdown-item" href="#panty_liner">Panty Liners</a>
                     <a class="dropdown-item" href="#period_cup">Period Cups</a>
                     <a class="dropdown-item" href="#other">Others</a>
+                    <a class="dropdown-item" href="#nav">Cart</a>
                 </div>
             </div>
         </h2>
@@ -390,7 +391,7 @@
   
 
                       
-      <div class="navbar">
+      <div class="navbar" id="nav">
         <a href="shop.php">Shop</a>
         <a href="product.php"  class="active">Products</a>
         <a href="cart.php">Cart</a>
