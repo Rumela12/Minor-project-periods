@@ -131,7 +131,7 @@ input[type="checkbox"]{
                     ?>
             <li><a href="period_track.php">Period Tracker</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="pamper_booth.php">Pamper Booth</a></li>
+            <li><a href="mood based playlist">Pamper Booth</a></li>
             <li><a href="shop.php">Shop</a></li>
             <li><a href="faq.php">FAQ</a></li>
             <li><a href="logout.php">Logout</a></li>
@@ -140,7 +140,7 @@ input[type="checkbox"]{
                     ?>
             <li><a href="period_track.php">Period Tracker</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="pamper_booth.php">Pamper Booth</a></li>
+            <li><a href="mood based playlist.php">Pamper Booth</a></li>
             <li><a href="shop.php">Shop</a></li>
             <li><a href="faq.php">FAQ</a></li>
             <li><a href="signup.php">Sign Up</a></li>

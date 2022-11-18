@@ -5,15 +5,16 @@
 	font-family: 'Alfa Slab One', cursive;
 }
 body{
-	display:flex;
+	/* display:flex; */
+	/* align-self: ; */
 	justify-content: center;
 	background: #ec9595;
 }
 
 .container{
 
-	position: relative;
-	width:1800px;
+	position:relative;
+	width:100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
