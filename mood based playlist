@@ -1,0 +1,84 @@
+<!DOCtype html>
+ <html>
+ <head>
+	<meta charset="utf-8">
+	<title>Moodify your mood partner</title>
+	<link rel="stylesheet" href="style.css">
+ </head>
+ 
+ <body>
+
+		<div class="container">
+					
+			<div class="card">
+				<div class="imgBx">
+					<a href="https://open.spotify.com/artist/58PoZ2UB30eX8jppZ6B87i?si=_9fdjTS5RcyWOFnJd_W1nw">
+					<img src="./image/img1.jpg">
+					</a>
+				
+					<h1>Sleeping Beauty</h1>
+					<p><br>Don't think about only the pain Princess, get dive into the sleep.Have a peaceful dream.
+					</p>
+					
+				</div>
+			</div>
+		
+			<div class="card">
+				<div class="imgBx">
+					<a href="https://open.spotify.com/playlist/4nd7oGDNgfM0rv28CQw9WQ?si=9367f5f13cf34707">
+					<img src="./image/img4.jpg">
+					</a>
+					<h1>Happyiest girl </h1>
+					<p><br> 
+					</p>					
+
+				</div>	
+			</div>	
+			
+			<div class="card">
+				<div class="imgBx">
+					<a href="https://open.spotify.com/playlist/37i9dQZF1EVKuMoAJjoTIw?si=51523a0d8c8c4618">
+					<img src="./image/img5.jpg">
+					</a>
+					<h1>Moodish Princess</h1>
+					<p><br>
+					</p>
+				</div>	
+			</div>	
+			<div class="card">
+				<div class="imgBx">
+					<a href="https://open.spotify.com/playlist/3jVqZ8fvpDVo0abZ8VethE?si=9aa2ce176cce4a02">
+					<img src="./image/8.jpg">
+					</a>
+					<h1>Okay-Okay</h1>
+					<p><br>
+					</p>
+				</div>	
+			</div>	
+			<div class="card">
+				<div class="imgBx">
+					<a href="https://open.spotify.com/playlist/4dbEn1n1ZFDHxWemaypSxa?si=c2d1e9cb9c30463f">
+					<img src="./image/9.jpg">
+					</a>
+					<h1>BE Powerful </h1>
+					<p><br>
+					</p>
+				</div>	
+			</div>
+			<div class="card">
+				<div class="imgBx">
+					<a href="pamper_booth.php">
+					<img src="./image/1.png">
+					</a>
+					<h1>Our Recommendation</h1>
+					<p><br>
+					</p>
+				</div>	
+			</div>
+		</div>	
+ 
+ 		
+
+ 
+ </body>
+ </html>
