@@ -127,20 +127,35 @@ input[type="checkbox"]{
          </label>
          <ul>
          <?php
+							// $email_id = $_SESSION['email_id'];
                 if (isset($_SESSION['email_id'])) {
+                  $email_id = $_SESSION['email_id'];
+                  if ($email_id=='admin@gmail.com'){
                     ?>
-            <li><a href="period_track.php">Period Tracker</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="mood based playlist">Pamper Booth</a></li>
-            <li><a href="shop.php">Shop</a></li>
-            <li><a href="faq.php">FAQ</a></li>
-            <li><a href="logout.php">Logout</a></li>
+                    <li><a href="track.php">Period Tracker</a></li>
+                    <li><a href="blog_main.php">Blog</a></li>
+                    <!-- <li><a href="mood_based_playlist.php">Pamper Booth</a></li> -->
+                    <!-- <li><a href="shop.php">Shop</a></li> -->
+                    <!-- <li><a href="faq.php">FAQ</a></li> -->
+                    <li><a href="blog_notification.php">Notifications</a></li>
+                    <li><a href="logout.php">Logout</a></li>
+                 <?php } else {
+                  ?>
+                    <li><a href="track.php">Period Tracker</a></li>
+                    <li><a href="blog_main.php">Blog</a></li>
+                    <li><a href="mood_based_playlist.php">Pamper Booth</a></li>
+                    <li><a href="shop.php">Shop</a></li>
+                    <li><a href="faq.php">FAQ</a></li>
+                    <li><a href="logout.php">Logout</a></li>
+                <?php }
+                    ?>
+            
             <?php
                 } else {
                     ?>
-            <li><a href="period_track.php">Period Tracker</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="mood based playlist.php">Pamper Booth</a></li>
+            <li><a href="track.php">Period Tracker</a></li>
+            <li><a href="blog_main.php">Blog</a></li>
+            <li><a href="mood_based_playlist.php">Pamper Booth</a></li>
             <li><a href="shop.php">Shop</a></li>
             <li><a href="faq.php">FAQ</a></li>
             <li><a href="signup.php">Sign Up</a></li>

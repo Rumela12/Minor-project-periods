@@ -10,7 +10,7 @@
 body{
   margin: 0;
   padding: 0;
-  background: url(img/login.jpg);
+  background-image: url(img/login.jpg);
   height: 100vh;
   overflow: hidden;
 }
