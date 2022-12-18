@@ -21,6 +21,6 @@
         $row = mysqli_fetch_array($login_select_query_result);
         $_SESSION['email_id'] = $email_id;
         $_SESSION['user_id']=$row['user_id'];
-        header("location:shop.php");
+        header("location:home.php");
     }
 ?>

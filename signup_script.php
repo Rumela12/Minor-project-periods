@@ -40,7 +40,7 @@
         $user_id = mysqli_insert_id($con);
         $_SESSION['user_id'] = $user_id;
         $_SESSION['email_id'] = $email_id;
-        header('location:shop.php');
+        header('location:home.php');
     }
 
 

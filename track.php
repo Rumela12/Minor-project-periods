@@ -1,7 +1,9 @@
 <?php
     include './includes/common.php';
 	if(!isset($_SESSION['email_id'])){
-        header('location:Login.php');
+        // echo "<h1>Log In to continue!</h1>";
+
+        header('location:signup.php');
     }
 ?>
 <html>
@@ -46,6 +48,9 @@
 				<p class="text-center" style="color: red;">The more dates you have the more accourate our Prediction will be!</p>
 				<p class="text-center" style="color: red;">Start with the most recent one and so on.</p>
 				<hr>
+	<?php 
+	// if(isset($_SESSION['email_id'])){
+?>
 				<div class="input-field">
 					<table class="table table-bordered" id="table_field">
 						<tr>
@@ -54,6 +59,7 @@
 							<th>Add or Remove</th>
 						</tr>
 						<?php
+
 							$user_id = $_SESSION['user_id'];
 							$email_id = $_SESSION['email_id'];
 							if(isset($_POST['save'])){
@@ -64,6 +70,7 @@
 									$result = mysqli_query($con, $query);
 								}
 							}
+						
 						?>
 						<tr>
 							<td><input class="form-control" type="date" name="p_date[]" required=""></td>
@@ -76,12 +83,22 @@
 					</center>
 				</div>
 			</form>
+<?php 
+// } 
+// else { 
+	?>
+	<!-- <tr style="padding-bottom: 100px;">
+		<td >Log In To continue!</td>
 
+	</tr> -->
 			<?php 
+			// }
+	// if(isset($_SESSION['email_id'])){
+			
 			$select = "SELECT * FROM dates WHERE u_id = '".$user_id."' ORDER BY id DESC";
 			$result = mysqli_query($con, $select);
-			if (mysqli_fetch_array($result)>=1){
-				?>
+			// if (mysqli_fetch_array($result)>=1){
+			// 	?>
 				<table class="table table-striped text-center" style="width: 50%;margin-left: auto; margin-right: auto;">
 				<hr>
 				<h1 class="text-center">Period Log</h1>
@@ -107,13 +124,12 @@
             </table>
 			<center>
 				<input class="btn btn-success" type="submit" name="save" id="save" onclick="location.href='view.php'" value="View Predicted Results"/>
-				<!-- <input class="btn btn-success" type="submit" name="delete" id="delete" onclick="<?php
-
-				?>" value="Delete your Data"/> -->
+				<input class="btn btn-danger" type="submit" name="delete" id="delete" onclick="location.href='del_data.php'" value="Delete all your Data"/>
 				<hr>
 			</center>
 		</div>
-<?php			}
+<?php			
+// }
 			?>
 			
 			</div>

@@ -8,8 +8,10 @@
     $pr_date = 0;
     $select = "SELECT * FROM dates WHERE u_id = '".$user_id."' ORDER BY id DESC";
     $result1 = mysqli_query($con, $select);
+    if(mysqli_num_rows($result1)>=1){
     $row_count = mysqli_num_rows($result1);
     // echo $row_count;
+
     while ($row = mysqli_fetch_array($result1)){
         $mydates[] = $row['p_date'];
     }
@@ -20,7 +22,6 @@
             $interval[] = (($mydate[($i+1)] - $mydate[$i])/60/60/24);
             // echo $interval[$i];
         }
-
         $pr_date = array_sum($interval);
         $days_bw = (int)($pr_date/$row_count);
         // echo $days_bw;
@@ -31,6 +32,9 @@
         // echo $pr_prediction;
         $nxt_prediction = date('Y-m-d', strtotime($prediction. ' + 1 days'));
         // echo $nxt_prediction;
+      }
+      $message = $email_id." First input your period dates."; 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -85,12 +89,16 @@
       <div>
       <i class="fa-solid fa-calendar-days"></i>
       </div>
+      <?php if(mysqli_num_rows($result1)>=1){ ?>
         <h1>Predicted Dates</h1> 
         <p><?php echo"$pr_prediction"; ?></p>
         <p><?php echo"$prediction"; ?></p>
         <p><?php echo"$nxt_prediction"; ?></p>
     </br>
         <p style="color: #9ABC66;">Return to <a href="home.php">Home page!</a></p>
+        <?php } else { ?>
+        <p style="color: #9ABC66;"><?php echo $message; ?> Return to <a href="track.php">Period Predict page!</a></p>
+      <?php } ?>
       </div>
       </div>
     

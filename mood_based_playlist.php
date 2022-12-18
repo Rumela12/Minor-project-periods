@@ -1,3 +1,9 @@
+<?php
+    include './includes/common.php';
+	// if(!isset($_SESSION['email_id'])){
+    //     header('location:Login.php');
+    // }
+?>
 <!DOCtype html>
  <html>
  <head>
