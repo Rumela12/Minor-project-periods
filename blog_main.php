@@ -23,7 +23,6 @@
     </style>
     <title>Tracker</title>
 </head>
-  
 <body style="background-image: url(img/login.jpg);">
 <?php
         include './includes/navbar.php';
@@ -37,12 +36,13 @@
                 <div class="alert alert-success" role="alert">
                     Post has been added successfully
                 </div>
-            <?php } else if($_REQUEST['info'] == "send"){ ?>
-                <div class="alert alert-success" role="alert">
+            
+        <?php } if($_REQUEST['info'] == "send"){?>
+            <div class="alert alert-success" role="alert">
                     Post has been sent to the admin for approval.
                 </div>
-                <?php } ?>
-        <?php } ?>
+            <?php } ?>
+            <?php }?>   
 <!-- Create a new Post button -->
 <div class="text-center">
     <?php

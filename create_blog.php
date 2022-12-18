@@ -25,21 +25,20 @@ $query = mysqli_query($con, $sql)or die($mysqli_error($con));
             $title = $_REQUEST['title'];
             $content = $_REQUEST['content'];
             $email_id = $_SESSION['email_id'];
-            $message = $email_id . " has requested a blog review it and then accept/reject it.";
+            $message = $email_id . " has requested a blog review it and then accept/reject it";
             
             if($email_id=='admin@gmail.com'){
                 $sql = "INSERT INTO data(email_id, title, content) VALUES('$email_id','$title', '$content')";
-                mysqli_query($con, $sql);
-                echo $sql;
+                $query = mysqli_query($con, $sql);
     
                 header("Location: blog_main.php?info=added");
-            }
-            else{
+                exit();
+            }else{
                 $sql = "INSERT INTO notifications(email_id, title, content, message) VALUES('$email_id','$title','$content','$message')";
                 mysqli_query($con, $sql);
-                echo $sql;
                 
                 header("Location: blog_main.php?info=send");
+                exit();
             }
            
             exit();

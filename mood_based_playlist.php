@@ -33,7 +33,7 @@
 					<img src="./images/img4.jpg">
 					</a>
 					<h1>Happyiest girl </h1>
-					<p><br> 
+					<p><br> Happy girl shines brighter.
 					</p>					
 
 				</div>	
@@ -45,7 +45,7 @@
 					<img src="./images/img5.jpg">
 					</a>
 					<h1>Moodish Princess</h1>
-					<p><br>
+					<p><br>It's okay to ovary-act.
 					</p>
 				</div>	
 			</div>	
@@ -55,7 +55,7 @@
 					<img src="./images/8.jpg">
 					</a>
 					<h1>Okay-Okay</h1>
-					<p><br>
+					<p><br>Keep breathing. Everything will be ok.
 					</p>
 				</div>	
 			</div>	
@@ -65,7 +65,7 @@
 					<img src="./images/9.jpg">
 					</a>
 					<h1>BE Powerful </h1>
-					<p><br>
+					<p><br>You are not a girl. You are a legend.
 					</p>
 				</div>	
 			</div>
@@ -75,7 +75,7 @@
 					<img src="./images/1.png">
 					</a>
 					<h1>Our Recommendation</h1>
-					<p><br>
+					<p><br>Be The Exception.
 					</p>
 				</div>	
 			</div>
